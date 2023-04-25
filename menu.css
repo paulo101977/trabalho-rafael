@@ -8,6 +8,15 @@
     box-sizing: border-box;
 }
 
+
+.container-fluid .navbar.bg-gray {
+    background-color: gray !important;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .with-space {
     display: flex;
 }
