@@ -8,6 +8,14 @@
     box-sizing: border-box;
 }
 
+.with-space {
+    display: flex;
+}
+
+.spacer {
+    flex: 1;
+}
+
 body {
     background-color: #dad9d9;
     width: 100vw;
