@@ -11,11 +11,6 @@
   </head>
 
   <body>
-    
-    
-    
-    
-    
 
       <div class="container-fluid">
           <nav class="navbar navbar-expand-lg navbar-light bg-gray">
@@ -61,29 +56,75 @@
                 class="collapse navbar-collapse" 
                 id="navbarNav">
                 <ul class="navbar-nav">
+                  <!-- primeiro item -->
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" data-toggle="collapse" data-target="#home" aria-expanded="true" aria-controls="collapseOne">
+                      Serviços do Cpaas
+                    </a>
                   </li>
+
+                  <div class="collapse collapse-menu" id="home">
+                    <li class="nav-item">
+                      <a class="nav-link">Como funciona</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Benefícios</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Quem usa?</a>
+                    </li>
+                  </div>
+
+                  <!-- segundo -->
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Internet </a>
+                    <a class="nav-link" data-toggle="collapse" data-target="#mascara">Número máscara</a>
                   </li>
+
+                  <div class="collapse collapse-menu" id="mascara">
+                    <li class="nav-item">
+                      <a class="nav-link">Quem usa?</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Recursos avançados</a>
+                    </li>
+                  </div>
+
+                   <!-- terceiro -->
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Rede e Infraestrutura</a>
+                    <a class="nav-link" data-toggle="collapse" data-target="#google">Google verified</a>
                   </li>
+
+                  <div class="collapse collapse-menu" id="google">
+                    <li class="nav-item">
+                      <a class="nav-link">Compatibilidade</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Benefícios </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Como funciona</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Usos</a>
+                    </li>
+                  </div>
+
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Mobilidade</a>
+                    <a class="nav-link" data-toggle="collapse" data-target="#programavel">SMS programável</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Telefonia</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">
-                        Seja nosso cliente
-                      </a>
-                  </li>
-                  <li class="nav-item">
-                        <a class="nav-link" href="#">Área do cliente</a>
-                  </li>
+
+                  <div class="collapse collapse-menu" id="programavel">
+                    <li class="nav-item">
+                      <a class="nav-link">Onde pode ser utilizado</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Jornada do cliente </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Benefícios</a>
+                    </li>
+                  </div>
+       
                 </ul>
               </div>
           </nav>
