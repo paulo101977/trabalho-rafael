@@ -160,9 +160,9 @@ body {
     transition: background 0.2s linear;
 }
 
-/* body.dark {
+body.dark {
     background: #232c3577;
-} */
+}
 
 body.dark .navbar.bg-gray {
     background-color: #232c35 !important;
