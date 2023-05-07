@@ -13,6 +13,7 @@
   <body>
 
       <div class="container-fluid">
+          <!-- navbar -->
           <nav class="navbar navbar-expand-lg navbar-light bg-gray">
             
               <!-- LOGO -->
@@ -46,6 +47,7 @@
                     </label>
                     
                   </div>
+                  <!-- fim do dark mode-->
                 </div>
                 
               </div>
@@ -56,78 +58,195 @@
                 class="collapse navbar-collapse" 
                 id="navbarNav">
                 <ul class="navbar-nav">
+
                   <!-- primeiro item -->
                   <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" data-target="#inicio" aria-expanded="true" aria-controls="collapseOne">
+                      Página Inicial
+                    </a>
+                  </li>
+                  
+                  <!-- CPaaS -->
+                  <li class="nav-item">
                     <a class="nav-link" data-toggle="collapse" data-target="#home" aria-expanded="true" aria-controls="collapseOne">
-                      Serviços do Cpaas
+                      Serviços Cpaas
                     </a>
                   </li>
 
                   <div class="collapse collapse-menu" id="home">
+
                     <li class="nav-item">
-                      <a class="nav-link">Como funciona</a>
+                      <a class="nav-link" data-toggle="collapse" data-target="#twofa" aria-expanded="true" aria-controls="collapseOne">
+                        2FA
+                      </a>
                     </li>
+
+                    <div class="collapse collapse-menu" id="twofa">
+                      <li class="nav-item">
+                        <a class="nav-link">Como funciona</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link">Benefícios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link">Quem usa?</a>
+                      </li>
+                    </div>
+
+                    <!-- segundo -->
                     <li class="nav-item">
-                      <a class="nav-link">Benefícios</a>
+                      <a class="nav-link" data-toggle="collapse" data-target="#mascara">Número máscara</a>
                     </li>
+
+                    <div class="collapse collapse-menu" id="mascara">
+                      <li class="nav-item">
+                        <a class="nav-link">Quem usa?</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link">Recursos avançados</a>
+                      </li>
+                    </div>
+
+                    <!-- terceiro -->
                     <li class="nav-item">
-                      <a class="nav-link">Quem usa?</a>
+                      <a class="nav-link" data-toggle="collapse" data-target="#google">Google verified</a>
                     </li>
+
+                    <div class="collapse collapse-menu" id="google">
+                      <li class="nav-item">
+                        <a class="nav-link">Compatibilidade</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link">Benefícios </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link">Como funciona</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link">Usos</a>
+                      </li>
+                    </div>
+
+                    <li class="nav-item">
+                      <a class="nav-link" data-toggle="collapse" data-target="#programavel">SMS programável</a>
+                    </li>
+
+                    <div class="collapse collapse-menu" id="programavel">
+                      <li class="nav-item">
+                        <a class="nav-link">Onde pode ser utilizado</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link">Jornada do cliente </a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link">Benefícios</a>
+                      </li>
+                      
+                  
+                    </div>
+                    
+                      
                   </div>
-
-                  <!-- segundo -->
-                  <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" data-target="#mascara">Número máscara</a>
-                  </li>
-
-                  <div class="collapse collapse-menu" id="mascara">
                     <li class="nav-item">
-                      <a class="nav-link">Quem usa?</a>
+                      <a class="nav-link" data-toggle="collapse" data-target="#Cliente">Aréa do Cliente</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link">Recursos avançados</a>
-                    </li>
-                  </div>
-
-                   <!-- terceiro -->
-                  <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" data-target="#google">Google verified</a>
-                  </li>
-
-                  <div class="collapse collapse-menu" id="google">
-                    <li class="nav-item">
-                      <a class="nav-link">Compatibilidade</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link">Benefícios </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link">Como funciona</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link">Usos</a>
-                    </li>
-                  </div>
-
-                  <li class="nav-item">
-                    <a class="nav-link" data-toggle="collapse" data-target="#programavel">SMS programável</a>
-                  </li>
-
-                  <div class="collapse collapse-menu" id="programavel">
-                    <li class="nav-item">
-                      <a class="nav-link">Onde pode ser utilizado</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link">Jornada do cliente </a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link">Benefícios</a>
-                    </li>
-                  </div>
-       
+                    
+                    
                 </ul>
               </div>
           </nav>
+
+          <div class="bg-image">
+          </div>
+
+          <hr class="hr-custom">
+
+          <h2>
+            O que é CPaaS?
+          </h2>
+
+          <div class="cpaas-wrapper">
+            <div>
+              <p>
+                O CPaaS (Plataforma de Comunicação como Serviço) é a solução perfeita para o seu negócio. 
+              </p>
+
+              <p>
+                O serviço oferece a estrutura completa para que canais de comunicação como <b>mensagens de texto SMS, 
+              </p>
+
+              <p>
+                chamadas de vídeo e de voz, e-mail, e outros, estejam integrados</b> de forma fácil nos sistemas das 
+              </p>
+
+              <p>
+                empresas através de APIs que se conectam à plataforma Modavo.
+              </p>
+            </div>
+
+            
+
+            
+            <img 
+              src="cpaas.png" 
+              class="img-cpaas">
+          </div>
+          
+
+          <hr class="hr-custom">
+
+          <h2>
+            CPaaS e a Transformação Digital
+          </h2>
+          
+          <div class="cpaas-wrapper">
+            <div>
+              <p>
+                Expectativa de crescimento estimado de
+                <b>$ 8,2 bilhões</b> em 2021
+              </p> 
+              
+              <p>
+                <strong>85%</strong> dos profissionais se conectam de
+                maneira diferente com colegas e clientes do que faziam há apenas 5 anos.
+              </p>
+
+              <p>
+                As receitas de <strong>CPaaS</strong> estão crescendo mais de
+                40% ao ano.
+              </p>
+
+               <p>
+                <strong>CPaaS</strong> já ultrapassou o mercado de UCaaS (Unified Communication as a Service).
+              </p>
+
+              <p>
+                Marcas que estão em <strong>múltiplos canais</strong>
+                melhoram a experiência do usuário e aumentam seus resultados.
+              </p>
+            </div>
+            
+            <img 
+              src="cpass_logo.png" 
+              class="img-cpaas">
+          </div>
+
+          <footer>
+
+            <p>Copyright © 2023 | Telecall. Todos os direitos reservados.</p>
+        
+            <div class="icon-wrapper">
+              <!-- Facebook -->
+              <i class="fab fa-facebook-f"></i>
+
+              <!-- Twitter -->
+              <i class="fab fa-twitter"></i>
+
+              <!-- Google -->
+              <i class="fab fa-google"></i>
+            </div>
+            
+        </footer>
       </div>
 
       <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
