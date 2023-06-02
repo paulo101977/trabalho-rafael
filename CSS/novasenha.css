@@ -1,0 +1,136 @@
+/*======================
+        1.FONTE E TAMANHO DA FONTE
+========================*/
+
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 70.6%;
+}
+
+/*======================
+        2.LOGO
+        AFASTA A LOGO DA MARGEM E DO FORMULÁRIO
+========================*/
+
+html ul {
+    height: 100.55px;
+    margin: 5rem;
+}
+
+ul li {
+    display: inline;
+}
+
+/*======================
+        3.CORPO
+        MARGEM E COR DE FUNDO
+========================*/
+
+body {
+    margin: 0;
+    background: #f1f1f1;
+}
+
+
+/*======================
+        4.CLASS BUTTON
+========================*/
+
+.btn {
+    padding: 10px 20px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 3%;
+    transition: .2s;
+    font-weight: 500;
+    box-shadow: 2px 2px 2px #00000033;
+    text-shadow: 10px 5px 5px #00000080;
+}
+
+/*Aciona a mão do mouse no botão*/
+.btn {
+    cursor: pointer;
+}
+
+/*pseudoclasse "hover" */
+/*Irá mudar a cor do botão*/
+.btn:hover {
+    background: #d40a0a
+}
+
+/*Cor do botão e tempo de ação da troca de cor do botão*/
+.btn {
+    transition: .2s;
+    background: #004a79;
+}
+
+/*===========================
+        5.INPUT FORMULÁRIO
+=============================*/
+
+.input {
+    border: 0;
+    background: 0 0;
+    padding: 0 14px;
+    line-height: 36px;
+    height: 36px;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px #0000000d;
+    border: 1px solid #0000001a;
+    font-size: 13px;
+    width: 100%
+}
+
+
+/*Grupo Label*/
+.input-group label {
+    display: inline-block;
+    font-size: 15px;
+    margin-bottom: 3px
+}
+
+/*Tag div class="form-row"*/
+.form-row {
+    display: block;
+    margin-top: 3.5rem
+}
+
+/*======================
+        6.CONTAINER
+========================*/
+.main-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px #0000000d;
+    max-width: 700px;
+    margin: 60px auto 0;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-size: 1.3rem;
+    padding: 4rem;
+    width: 100%
+}
+
+/*======================
+        7.PAINEL
+========================*/
+.auth-panel {
+    background: #f7f7f7;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.auth-panel p {
+    font-size: 22px;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: #676a6d
+}
