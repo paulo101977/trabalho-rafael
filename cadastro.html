@@ -5,127 +5,188 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja Cliente | Cadastra-se</title>
+
+    <!--LOGO NA ABA-->
+    <link rel="shortcut icon" href="_img/minilogo.png" type="image/x-icon">
+
+    <!--CSS-->
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/cadastro.css">
-    <title>Área do Cliente</title>
+
+    <link rel="stylesheet" href="css/Stylecadastro.css">
+
+    <link rel="stylesheet" href="CSS/Responsivo.css">
+
 </head>
 
-<!--corpo-->
+<!--CORPO-->
 
 <body>
-    <!--logo-->
+    <!--LOGO-->
     <ul>
         <li><img src="_img/logo-telelecall.png"></a>
         </li>
 
     </ul>
-    <!--cabeçalho-->
-    <div class="container-fluid">
-
-        <div class="main-container">
-            <div class="col-md-6">
 
 
-                <!--formulário-->
-                <div class="form-row">
-                    <div class="input-group">
-                        <label for="nome"><strong>NOME COMPLETO:</strong></label>
-                        <input name="text" type="text" name="nome" id="nome" placeholder="Digite seu nome" class="input"
-                            required>
-                    </div>
+    <!--MAIN CONTAINER-->
+    <div class="main-container">
+        <div class="col-md-6">
+
+            <!--INÍCIO PANEL-->
+            <div class="auth-panel">
+                <h3>
+                    <strong>SEJA NOSSO CLIENTE</strong>
+                </h3>
+                <p><strong>CADASTRA-SE</strong>
+                </p>
+            </div>
+            <!--FIM PANEL-->
+
+            <!--FORMULÁRIO-->
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="nome"><strong>NOME COMPLETO</strong></label>
+                    <input name="text" type="text" name="nome" id="nome" placeholder="Digite seu nome" class="input"
+                        required>
+                    <span class="span-required"></span>
                 </div>
+            </div>
 
-                <div class="form-row">
-                    <div class="input-group">
-                        <label for="nome"><strong>NOME MATERNO:</strong></label>
-                        <input name="text" type="text" name="nome" id="nome" placeholder="Digite nome materno"
-                            class="input" required>
-                    </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="nome"><strong>NOME MATERNO</strong></label>
+                    <input name="text" type="text" name="nome" id="nome" placeholder="Digite o nome de sua mãe"
+                        class="input" required>
                 </div>
+            </div>
 
-                <div class="form-row">
-                    <div class="input-group">
-                        <label for="email"><strong>EMAIL:</strong></label>
-                        <input type="email" name="email" id="email" placeholder="Digite aqui seu email" class="input"
-                            required>
-                    </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="email"><strong>EMAIL</strong></label>
+                    <input type="email" name="email" id="email" placeholder="Digite aqui seu email" class="input"
+                        required>
                 </div>
+            </div>
 
-                <div class="form-row">
-                    <div class="input-group">
-                        <label for="address"><strong>CPF:</strong></label>
-                        <input type="address" name="address" id="address" placeholder="Digite seu endereço"
-                            class="input" required>
-                    </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="cpf"><strong>CPF</strong></label>
+                    <input type="text" name="cpf" id="cpf" placeholder="Digite aqui seu Cpf" class="input" required>
                 </div>
+            </div>
 
-                <div class="form-row">
-                    <div class="input-group">
-                        <label for="email"><strong>ENDEREÇO COMPLETO:</strong></label>
-                        <input type="email" name="email" id="email" placeholder="Digite aqui seu email" class="input"
-                            required>
-                    </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="adress"><strong>ENDEREÇO COMPLETO</strong></label>
+                    <input type="text" name="adress" id="adress" placeholder="Digite aqui seu endereço" class="input"
+                        required>
                 </div>
+            </div>
 
-                <div class="form-row">
-                    <div class="input-group">
-                        <label for="sex"><strong>SEXO:</strong></label>
-                        <select id="sex" required>
-                            <option selected disabled value="">Selecione</option>
-                            <option>Feminino</option>
-                            <option>Masculino</option>
-                            <option>Outro</option>
-                        </select>
-                    </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="sex"><strong>SEXO</strong></label>
+                    <select id="sex" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option>Feminino</option>
+                        <option>Masculino</option>
+                        <option>Outro</option>
+                    </select>
                 </div>
+            </div>
 
-                <div class="form-row">
-                    <div class="input-group">
-                        <label for="date"><strong>DATA DE NASCIMENTO:</strong></label>
-                        <input type="date" name="date" id="date" placeholder="" class="input" required>
-                    </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="date"><strong>DATA DE NASCIMENTO</strong></label>
+                    <input type="date" name="date" id="date" placeholder="" class="input required">
                 </div>
+            </div>
 
-                <div class="form-row">
-                    <div class="input-group">
-                        <label for="tel"><strong>TEL FIXO:</strong></label>
-                        <input type="text" name="tel" id="tel" placeholder="(+55)XX-XXXXXXXX" class="input" required>
-                    </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="tel"><strong>TEL FIXO</strong></label>
+                    <input type="text" name="tel" id="tel" placeholder="(+55)XX-XXXXXXXX" class="input" required>
                 </div>
+            </div>
 
-                <div class="form-row">
-                    <div class="input-group">
-                        <label for="tel"><strong>CELULAR:</strong></label>
-                        <input type="text" name="tel" id="tel" placeholder="(+55)XX-XXXXXXXX" class="input" required>
-                    </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="tel"><strong>CELULAR</strong></label>
+                    <input type="text" name="tel" id="tel" placeholder="(+55)XX-XXXXXXXX" class="input" required>
                 </div>
+            </div>
 
-                <div class="form-row">
-                    <div class="input-group">
-                        <label for="password"><strong>SENHA:</strong></label>
-                        <input name="password" type="password" id="password" placeholder="Digite sua senha"
-                            class="input" required />
-                    </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="password"><strong>SENHA</strong></label>
+                    <input name="password" type="password" id="password" placeholder="Digite sua senha" class="input"
+                        required />
                 </div>
-                <div class="form-row">
-                    <div class="input-group">
-                        <label for="password"><strong>CONFIRMAR SENHA:</strong></label>
-                        <input name="password" type="password" id="password" placeholder="Confirme a sua senha"
-                            class="input" required />
-                    </div>
+            </div>
+            <div class="form-row">
+                <div class="input-group">
+                    <label for="password"><strong>CONFIRMAR SENHA</strong></label>
+                    <input name="password" type="password" id="password" placeholder="Confirme a sua senha"
+                        class="input" required />
                 </div>
+                <p>Já é nosso Cliente?<a
+                        href="file:///C:/Users/mayam/OneDrive/%C3%81rea%20de%20Trabalho/Trabalho%20Faculdade/login.html#"><strong>
+                            Acesse sua conta</strong></a></p>
 
-                <p>Já é nosso Cliente?<a href="#"><strong>Acesse sua conta</strong></a></p>
-
-                <div class="col-md-4">
-                    <button class="btn btn primary" type="submit">Entrar</button>
-                </div>
 
             </div>
 
+            <div class="col-md-4">
+                <button class="btn btn primary" type="submit">Entrar</button>
+            </div>
+
         </div>
+
     </div>
+    <!--JS-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+<!--VALIDAÇÃO CPF-->
+    <script>
+        jQuery(document).ready(function () {
+
+            var cpf = '#form-row';
+
+            jQuery(cpf).blur(function () {
+                var cpf = jQuery(cpf).val();
+                if (cpf.length == 11) {
+                    var v = [];
+                    //Calcula o primeiro dígito de verificação.
+                    v[0] = 1 * cpf[0] + 2 * cpf[1] + 3 * cpf[2];
+                    v[0] += 4 * cpf[3] + 5 * cpf[4] + 6 * cpf[5];
+                    v[0] += 7 * cpf[6] + 8 * cpf[7] + 9 * cpf[8];
+                    v[0] = v[0] % 11;
+                    v[0] = v[0] % 10;
+                    //Calcula o segundo dígito de verificação.
+                    v[1] = 1 * cpf[1] + 2 * cpf[2] + 3 * cpf[3];
+                    v[1] += 4 * cpf[4] + 5 * cpf[5] + 6 * cpf[6];
+                    v[1] += 7 * cpf[7] + 8 * cpf[8] + 9 * v[0];
+                    v[1] = v[1] % 11;
+                    v[1] = v[1] % 10;
+                    //Retorna Verdadeiro se os dígitos de verificação são os esperados.
+                    if ((v[0] != cpf[9]) || (v[1] != cpf[10])) {
+                        jQuery(cpf).css("border", "2px solid red");
+                        jQuery(cpf).val("");
+                        jQuery(cpf).focus();
+                    } else {
+                        jQuery(cpf).css("border", "2px solid green");
+                    }
+                } else {
+                    jQuery(cpf).css("border", "2px solid red");
+                    jQuery(cpf).val("");
+                    jQuery(cpf).focus();
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
