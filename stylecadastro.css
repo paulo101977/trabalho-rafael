@@ -1,0 +1,167 @@
+/*========================
+        FONTE E TAMANHO
+===========================*/
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 70.6%;
+}
+
+/*===============================================
+        LOGO
+        AFASTA A LOGO DA MARGEM E DO FORMULÁRIO
+=================================================*/
+html ul {
+    height: 100.55px;
+    margin-top: 5rem;
+
+}
+
+ul li {
+    display: inline;
+}
+
+/*=============================
+        CORPO
+        MARGEM E COR DE FUNDO
+===============================*/
+body {
+    margin: 0;
+    background: #f1f1f1;
+}
+
+/*=======================================================
+        CLASS COL
+        DIMINUI O TAMANHO DA BORDA DO INPUT E DO PAINEL
+=========================================================*/
+[class*=col-] {
+    padding-left: 9px;
+    padding-right: 9px
+}
+
+/*========================================
+        LINK
+        COR DO LINK E SEM UNDERLINE FIXO
+==========================================*/
+.link,
+a {
+    color: #cb1c2b;
+    text-decoration: none
+}
+
+/*============================================
+        LINK PSEUDOCLASSE HOVER
+       AO PASSAR O MOUSE, APARECE O UNDERLINE
+==============================================*/
+.link:hover,
+a:hover {
+    text-decoration: underline;
+}
+
+/*======================
+        CLASS BUTTON
+========================*/
+.btn {
+    padding: 10px 20px;
+    margin-left: 15rem;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    border: 3%;
+    transition: .2s;
+    font-weight: 500;
+    box-shadow: 2px 2px 2px #00000033;
+    text-shadow: 10px 5px 5px #00000080;
+}
+
+/*Aciona a mão do mouse no botão*/
+.btn {
+    cursor: pointer;
+}
+
+/*=============================================
+        CLASS BUTTON C/ PSEUDOCLASSE "HOVER"
+        MUDA A COR DO BOTÃO
+===============================================*/
+.btn:hover {
+    background: #d40a0a
+}
+
+/*Cor do botão e tempo de ação da troca de cor do botão*/
+.btn {
+    transition: .2s;
+    background: #004a79;
+}
+
+/*===========================
+        INPUT FORMULÁRIO + SELECT
+=============================*/
+.input,
+select {
+    border: 0;
+    background: 0 0;
+    padding: 0 14px;
+    font-size: 13px;
+    width: 91%;
+    line-height: 36px;
+    height: 36px;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px #0000000d;
+    border: 1px solid #0000001a;
+
+}
+
+
+/*Grupo Label*/
+.input-group label {
+    display: inline-block;
+    font-size: 15px;
+    margin-bottom: 3px
+}
+
+
+/*Tag div class="form-row"*/
+.form-row {
+    display: block;
+    margin-top: .9rem;
+    width: 100%;
+    margin-left: 50%;
+
+
+}
+
+/*======================
+        CONTAINER
+========================*/
+.main-container {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 8px 8px 8px #0000000d;
+    max-width: 700px;
+    margin: 60px auto 0;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-size: 1.3rem;
+    padding: 4rem;
+    width: 100%
+}
+
+/*======================
+        PANEL
+========================*/
+.auth-panel {
+    padding: 30px;
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+
+}
+
+.auth-panel p {
+    font-size: 22px;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    color: #676a6d
+}
