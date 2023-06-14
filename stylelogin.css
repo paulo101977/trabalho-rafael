@@ -1,11 +1,15 @@
-/*Fonte e tamanho da fonte */
+/*========================
+       FONTE E TAMANHO
+===========================*/
 html {
     font-family: Helvetica, sans-serif;
     font-size: 70.6%;
 }
 
-/*Logo*/
-/*Afasta a logo da margem e do formulário.*/
+/*===============================================
+       LOGO
+        AFASTA A LOGO DA MARGEM E DO FORMULÁRIO
+=================================================*/
 html ul {
     height: 100.55px;
     margin: 5rem;
@@ -15,58 +19,54 @@ ul li {
     display: inline;
 }
 
-/*corpo*/
-/*Margem e cor de fundo*/
+/*=============================
+       CORPO
+        MARGEM E COR DE FUNDO
+===============================*/
 body {
     margin: 0;
     background: #f1f1f1;
 }
 
+/*=======================================================
+        CLASS COL
+        DIMINUI O TAMANHO DA BORDA DO INPUT E DO PAINEL
+=========================================================*/
 
-*,
-::after,
-::before {
-    box-sizing: border-box;
-}
-
-/*Class col*/
-/*Diminui o tamanho da borda do input e da área do cliente*/
 [class*=col-] {
     padding-left: 9px;
     padding-right: 9px
 }
 
-/*painel área do cliente*/
-/*Tamanho de acordo com a tela*/
+/*========================================
+       LINK
+        COR DO LINK E SEM UNDERLINE FIXO
+==========================================*/
 
-
-
-
-
-
-/*link "criar conta" e "esqueci senha"*/
-/*Cor do link e sem underline fixo*/
 .link,
 a {
     color: #cb1c2b;
     text-decoration: none
 }
 
+/*============================================
+       LINK PSEUDOCLASSE HOVER
+       AO PASSAR O MOUSE, APARECE O UNDERLINE
+==============================================*/
 
-/*Link "Esqueci a senha" e "Seja cliente"*/
-/*Ao passar o mouse, aparece o underline*/
 .link:hover,
 a:hover {
     text-decoration: underline;
 }
 
-/*Classe "button"*/
-/*Tamanho, cor,*/
+/*======================
+       CLASS BUTTON
+========================*/
+
 .btn {
     padding: 10px 20px;
     color: #fff;
     text-align: center;
-    font-size: 22px;
     font-size: 1.2rem;
     border-radius: 10px;
     border: 3%;
@@ -76,26 +76,29 @@ a:hover {
     text-shadow: 10px 5px 5px #00000080;
 }
 
-/* Classe button*/
+
 /*Aciona a mão do mouse no botão*/
 .btn {
     cursor: pointer;
 }
 
-/* Classe "button" com pseudoclasse "hover" */
-/*Irá mudar a cor do botão*/
+/*=============================================
+     CLASS BUTTON C/ PSEUDOCLASSE "HOVER"
+        MUDA A COR DO BOTÃO
+===============================================*/
 .btn:hover {
     background: #d40a0a
 }
 
-/*classe button*/
-/*Cor do botão e tempo de ação da troca de cor do botão*/
+/*Cor do botão e tempo de ação da troca de cor*/
 .btn {
     transition: .2s;
     background: #004a79;
 }
 
-
+/*===========================
+     INPUT FORMULÁRIO
+=============================*/
 .input {
     border: 0;
     background: 0 0;
@@ -107,7 +110,7 @@ a:hover {
     box-shadow: 8px 8px 8px #0000000d;
     border: 1px solid #0000001a;
     font-size: 13px;
-    width: 100%
+    width: 92%
 }
 
 
@@ -118,14 +121,15 @@ a:hover {
     margin-bottom: 3px
 }
 
-/*formulário*/
 /*Tag div class="form-row"*/
 .form-row {
     display: block;
     margin-top: 3.5rem
 }
 
-/*cabeçalho*/
+/*======================
+       CONTAINER
+========================*/
 .main-container {
     background: #fff;
     border-radius: 10px;
@@ -137,28 +141,19 @@ a:hover {
     font-size: 18px;
     font-size: 1.3rem;
     padding: 4rem;
-    width: 100%
+
 }
 
-/*Painel "área do cliente"*/
+/*======================
+    PANEL
+========================*/
 .auth-panel {
     background: #f7f7f7;
     padding: 30px;
     border-radius: 10px;
-    display: flex;
-    flex-direction: column;
     width: 100%;
+    margin-left: .5rem;
 }
-
-.auth-panel .heading {
-    display: flex;
-    align-items: center;
-    margin: 0 0 1.5rem;
-    font-size: 1.8rem;
-    opacity: .5
-}
-
-
 
 .auth-panel p {
     font-size: 22px;
