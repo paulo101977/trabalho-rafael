@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600|Nunito:400,600,700');
+
+/*======================
+        CORPO
+========================*/
+
+body {
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    color: #cb1c2b;
+}
+
+/*==========================
+      BACK TOP ---  VOLTA AO TOPO
+============================*/
+.back_top {
+    text-align: center;
+    position: fixed;
+    bottom: 15px;
+    height: 35px;
+    width: 35px;
+    display: none;
+    z-index: 10000;
+    border-radius: 3px;
+    right: 20px;
+    transition: all 0.5s;
+}
+
+.back_top i {
+    color: #f80e0e;
+    line-height: 35px;
+    font-size: 32px;
+    display: block;
+}
+
+
+/*==========================
+    SECTION
+============================*/
+
+.section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    background-color: #fff;
+}
+
+a:hover {
+    text-decoration: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+/*===========================
+    FUNCIONAMENTO 2FA E N.MÁSCARA
+=============================*/
+
+.funciona-boxes {
+    border: 1px solid #e8e8e8;
+}
+
+.funciona-boxes .funciona-boxes-img i {
+    font-size: 44px;
+}
+
+.funciona-boxes .funciona-title-border {
+    height: 2px;
+    width: 40px;
+    margin: 15px auto;
+    transition: all 0.5s;
+}
+
+.funciona-boxes:hover .funciona-title-border {
+    width: 60px;
+}
+
+.funciona-boxes h5 {
+    font-weight: 600;
+}
+
+
+/*===========================
+         USO 2FA E RECURSOS N.MÁSCARA
+=============================*/
+
+.owl-theme .owl-controls .owl-page {
+    margin: 20px 0px;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 12px;
+    height: 6px;
+    margin: 5px 4px;
+    filter: Alpha(Opacity=50);
+    opacity: 0.5;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    transition: all 0.4s;
+}
+
+.owl-theme .owl-controls .owl-page.active span {
+    width: 20px;
+}
+
+
+
+/*======================
+        RODAPÉ
+========================*/
+
+.footer {
+    padding: 70px 0px;
+    background-color: #242424 !important;
+}
+
+.footer .footer-alt p {
+    font-size: 16px;
+}
+
+.footer .footer-alt ul li a {
+    border-radius: 50%;
+    transition: all 0.5s;
+    background-color: #f1f1f121;
+    width: 42px;
+    height: 42px;
+    display: block;
+    font-size: 18px;
+    line-height: 42px;
+    text-align: center;
+}
