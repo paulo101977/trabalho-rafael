@@ -1,3 +1,11 @@
+* {
+    font-size: 15px !important;
+}
+
+#toogle {
+    font-size: 20px !important;
+}
+
 ul.pattern {
     list-style: none outside none;
     margin: 0 0 0;

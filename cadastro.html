@@ -14,9 +14,15 @@
     <link rel="stylesheet" type="text/css"
         href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
-    <link rel="stylesheet" href="css/Stylecadastro.css">
+    <link rel="stylesheet" href="stylecadastro.css">
 
     <link rel="stylesheet" href="CSS/Responsivo.css">
+
+    <!--STYLE CSS -->
+    <link href="css/Responsivo.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS/menu.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
 </head>
 
@@ -24,11 +30,151 @@
 
 <body>
     <!--LOGO-->
-    <ul>
-        <li><img src="_img/logo-telelecall.png"></a>
-        </li>
+    <nav class="navbar navbar-expand-lg navbar-light bg-gray">
+            
+        <!-- LOGO -->
+        <div class="header-wrapper">
+          <a class="navbar-brand" href="#">
+            <img src="_img/logo-telelecall.png" width="100" height="40" alt="">
+          </a>
+      
+          <div class="button-wrapper">
+            <button onclick="decreaseFontSize()">A -</button>
+            <button onclick="increaseFontSize()">A +</button>
+            <!-- BOTÃO MENU -->
+            <button 
+              class="navbar-toggler" 
+              type="button" 
+              data-toggle="collapse" 
+              data-target="#navbarNav" 
+              aria-controls="navbarNav" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation">
+              <span id="toogle" class="navbar-toggler-icon"></span>
+            </button>
+            
+            
+            <!-- DARK MODE -->
+            <div>
+              <input type="checkbox" class="checkbox" id="chk"/>
 
-    </ul>
+              <label class="label" for="chk">
+                <i id="moon" class="fas fa-moon"></i>
+                <i id="font" class="fas fa-sun"></i>
+                <div class="ball"></div>
+              </label>
+              
+            </div>
+            <!-- fim do dark mode-->
+          </div>
+          
+        </div>
+        
+
+        <!-- parte colapsável -->
+        <div 
+          class="collapse navbar-collapse" 
+          id="navbarNav">
+          <ul class="navbar-nav">
+
+            <!-- primeiro item -->
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" data-target="#inicio" aria-expanded="true" aria-controls="collapseOne">
+                Página Inicial
+              </a>
+            </li>
+            
+            <!-- CPaaS -->
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="collapse" data-target="#home" aria-expanded="true" aria-controls="collapseOne">
+                Serviços Cpaas
+              </a>
+            </li>
+
+            <div class="collapse collapse-menu" id="home">
+
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" data-target="#twofa" aria-expanded="true" aria-controls="collapseOne">
+                  2FA
+                </a>
+              </li>
+
+              <div class="collapse collapse-menu" id="twofa">
+                <li class="nav-item">
+                  <a class="nav-link">Como funciona</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Benefícios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Quem usa?</a>
+                </li>
+              </div>
+
+              <!-- segundo -->
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" data-target="#mascara">Número máscara</a>
+              </li>
+
+              <div class="collapse collapse-menu" id="mascara">
+                <li class="nav-item">
+                  <a class="nav-link">Quem usa?</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Recursos avançados</a>
+                </li>
+              </div>
+
+              <!-- terceiro -->
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" data-target="#google">Google verified</a>
+              </li>
+
+              <div class="collapse collapse-menu" id="google">
+                <li class="nav-item">
+                  <a class="nav-link">Compatibilidade</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Benefícios </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Como funciona</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Usos</a>
+                </li>
+              </div>
+
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" data-target="#programavel">SMS programável</a>
+              </li>
+
+              <div class="collapse collapse-menu" id="programavel">
+                <li class="nav-item">
+                  <a class="nav-link">Onde pode ser utilizado</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Jornada do cliente </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link">Benefícios</a>
+                </li>
+                
+            
+              </div>
+              
+                
+            </div>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" data-target="#Cliente">Aréa do Cliente</a>
+              </li>
+              
+              
+          </ul>
+        </div>
+    </nav>
+
+    <hr class="hr-custom">
 
 
     <!--MAIN CONTAINER-->
@@ -74,7 +220,22 @@
             <div class="form-row">
                 <div class="input-group">
                     <label for="cpf"><strong>CPF</strong></label>
-                    <input type="text" name="cpf" id="cpf" placeholder="Digite aqui seu Cpf" class="input" required>
+                    <input 
+                        type="text" 
+                        name="cpf" 
+                        id="cpf" 
+                        placeholder="Digite aqui seu Cpf" 
+                        class="input" 
+                        required
+                        maxlength="11"
+                        oninput="validarCPF()"
+                    >
+                </div>
+                <div 
+                    id="mensagemErro"
+                    class="alert alert-danger" 
+                    style="display: none; margin-top: 5px; margin-bottom: 10px">
+                    Digite um cpf válido!
                 </div>
             </div>
 
@@ -150,43 +311,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     
 <!--VALIDAÇÃO CPF-->
-    <script>
-        jQuery(document).ready(function () {
-
-            var cpf = '#form-row';
-
-            jQuery(cpf).blur(function () {
-                var cpf = jQuery(cpf).val();
-                if (cpf.length == 11) {
-                    var v = [];
-                    //Calcula o primeiro dígito de verificação.
-                    v[0] = 1 * cpf[0] + 2 * cpf[1] + 3 * cpf[2];
-                    v[0] += 4 * cpf[3] + 5 * cpf[4] + 6 * cpf[5];
-                    v[0] += 7 * cpf[6] + 8 * cpf[7] + 9 * cpf[8];
-                    v[0] = v[0] % 11;
-                    v[0] = v[0] % 10;
-                    //Calcula o segundo dígito de verificação.
-                    v[1] = 1 * cpf[1] + 2 * cpf[2] + 3 * cpf[3];
-                    v[1] += 4 * cpf[4] + 5 * cpf[5] + 6 * cpf[6];
-                    v[1] += 7 * cpf[7] + 8 * cpf[8] + 9 * v[0];
-                    v[1] = v[1] % 11;
-                    v[1] = v[1] % 10;
-                    //Retorna Verdadeiro se os dígitos de verificação são os esperados.
-                    if ((v[0] != cpf[9]) || (v[1] != cpf[10])) {
-                        jQuery(cpf).css("border", "2px solid red");
-                        jQuery(cpf).val("");
-                        jQuery(cpf).focus();
-                    } else {
-                        jQuery(cpf).css("border", "2px solid green");
-                    }
-                } else {
-                    jQuery(cpf).css("border", "2px solid red");
-                    jQuery(cpf).val("");
-                    jQuery(cpf).focus();
-                }
-            });
-        });
+    <script src="scripts/validacao.js">
     </script>
+
+    <script async type="text/javascript" src="submenu.js"></script>
 </body>
 
 </html>
