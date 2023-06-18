@@ -1,0 +1,23 @@
+.bg-image {
+    width: 100%;
+    height: calc(70vh);
+    background-size: cover;
+    z-index: -10;
+    margin-top: 66px;
+    position: relative;
+}
+
+
+.bg-image:after {
+    top: 0;
+    position: absolute;
+    content: "";
+    background: url(video.gif) no-repeat center center;
+    margin-left: -15px;
+    margin-right: -15px;
+    position: absolute;
+    display: inline-block;
+    background-size: cover;
+    width: calc(100% + 30px);
+    height: 100%;
+}
