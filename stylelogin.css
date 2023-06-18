@@ -6,14 +6,6 @@ html {
     font-size: 70.6%;
 }
 
-/*===============================================
-       LOGO
-        AFASTA A LOGO DA MARGEM E DO FORMULÁRIO
-=================================================*/
-html ul {
-    height: 100.55px;
-    margin: 5rem;
-}
 
 ul li {
     display: inline;

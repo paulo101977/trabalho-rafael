@@ -33,7 +33,165 @@
     <link href="css/responsive.css" rel="stylesheet">
 
 
+    <!--STYLE CSS -->
+    <link href="css/style1.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+
+
+    <link href="css/Responsivo.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="CSS/menu.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
 <body>
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-gray">
+                
+            <!-- LOGO -->
+            <div class="header-wrapper">
+              <a class="navbar-brand" href="#">
+                <img src="_img/logo-telelecall.png" width="100" height="40" alt="">
+              </a>
+          
+              <div class="button-wrapper">
+                <button onclick="decreaseFontSize()">A -</button>
+                <button onclick="increaseFontSize()">A +</button>
+                <!-- BOTÃO MENU -->
+                <button 
+                  class="navbar-toggler" 
+                  type="button" 
+                  data-toggle="collapse" 
+                  data-target="#navbarNav" 
+                  aria-controls="navbarNav" 
+                  aria-expanded="false" 
+                  aria-label="Toggle navigation">
+                  <span id="toogle" class="navbar-toggler-icon"></span>
+                </button>
+                
+                
+                <!-- DARK MODE -->
+                <div>
+                  <input type="checkbox" class="checkbox" id="chk"/>
+  
+                  <label class="label" for="chk">
+                    <i id="moon" class="fas fa-moon"></i>
+                    <i id="font" class="fas fa-sun"></i>
+                    <div class="ball"></div>
+                  </label>
+                  
+                </div>
+                <!-- fim do dark mode-->
+              </div>
+              
+            </div>
+            
+  
+            <!-- parte colapsável -->
+            <div 
+              class="collapse navbar-collapse" 
+              id="navbarNav">
+              <ul class="navbar-nav">
+  
+                <!-- primeiro item -->
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="collapse" data-target="#inicio" aria-expanded="true" aria-controls="collapseOne">
+                    Página Inicial
+                  </a>
+                </li>
+                
+                <!-- CPaaS -->
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="collapse" data-target="#home" aria-expanded="true" aria-controls="collapseOne">
+                    Serviços Cpaas
+                  </a>
+                </li>
+  
+                <div class="collapse collapse-menu" id="home">
+  
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" data-target="#twofa" aria-expanded="true" aria-controls="collapseOne">
+                      2FA
+                    </a>
+                  </li>
+  
+                  <div class="collapse collapse-menu" id="twofa">
+                    <li class="nav-item">
+                      <a class="nav-link">Como funciona</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Benefícios</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Quem usa?</a>
+                    </li>
+                  </div>
+  
+                  <!-- segundo -->
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" data-target="#mascara">Número máscara</a>
+                  </li>
+  
+                  <div class="collapse collapse-menu" id="mascara">
+                    <li class="nav-item">
+                      <a class="nav-link">Quem usa?</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Recursos avançados</a>
+                    </li>
+                  </div>
+  
+                  <!-- terceiro -->
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" data-target="#google">Google verified</a>
+                  </li>
+  
+                  <div class="collapse collapse-menu" id="google">
+                    <li class="nav-item">
+                      <a class="nav-link">Compatibilidade</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Benefícios </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Como funciona</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Usos</a>
+                    </li>
+                  </div>
+  
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" data-target="#programavel">SMS programável</a>
+                  </li>
+  
+                  <div class="collapse collapse-menu" id="programavel">
+                    <li class="nav-item">
+                      <a class="nav-link">Onde pode ser utilizado</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Jornada do cliente </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link">Benefícios</a>
+                    </li>
+                    
+                
+                  </div>
+                  
+                    
+                </div>
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="collapse" data-target="#Cliente">Aréa do Cliente</a>
+                  </li>
+                  
+                  
+              </ul>
+            </div>
+        </nav>
+  
+        <hr class="hr-custom">
+  
 
     <!-- INÍCIO INTRODUÇÃO -->
     <section class="section" id="introducao">
@@ -352,7 +510,7 @@
     </footer>
     <!--FIM RODAPÉ-->
 
-
+    </div>
 
     <!--SETA VOLTA AO TOPO -->
     <a href="#" class="back_top"> <i class="mdi mdi-chevron-up"> </i> </a>
@@ -370,6 +528,12 @@
     <script src="js/owl.carousel.min.js"></script>
     <!--SCRIPT JS-->
     <script src="js/script.js"></script>
+
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"></script>
+    <script async type="text/javascript" src="submenu.js"></script>
+    <script async type="text/javascript" src="menu.js"></script>
 
 </body>
 

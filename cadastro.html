@@ -29,283 +29,285 @@
 <!--CORPO-->
 
 <body>
-    <!--LOGO-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-gray">
-            
-        <!-- LOGO -->
-        <div class="header-wrapper">
-          <a class="navbar-brand" href="#">
-            <img src="_img/logo-telelecall.png" width="100" height="40" alt="">
-          </a>
-      
-          <div class="button-wrapper">
-            <button onclick="decreaseFontSize()">A -</button>
-            <button onclick="increaseFontSize()">A +</button>
-            <!-- BOTÃO MENU -->
-            <button 
-              class="navbar-toggler" 
-              type="button" 
-              data-toggle="collapse" 
-              data-target="#navbarNav" 
-              aria-controls="navbarNav" 
-              aria-expanded="false" 
-              aria-label="Toggle navigation">
-              <span id="toogle" class="navbar-toggler-icon"></span>
-            </button>
-            
-            
-            <!-- DARK MODE -->
-            <div>
-              <input type="checkbox" class="checkbox" id="chk"/>
-
-              <label class="label" for="chk">
-                <i id="moon" class="fas fa-moon"></i>
-                <i id="font" class="fas fa-sun"></i>
-                <div class="ball"></div>
-              </label>
+    <div class="container-fluid">
+      <!--LOGO-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-gray">
               
+          <!-- LOGO -->
+          <div class="header-wrapper">
+            <a class="navbar-brand" href="#">
+              <img src="_img/logo-telelecall.png" width="100" height="40" alt="">
+            </a>
+        
+            <div class="button-wrapper">
+              <button onclick="decreaseFontSize()">A -</button>
+              <button onclick="increaseFontSize()">A +</button>
+              <!-- BOTÃO MENU -->
+              <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#navbarNav" 
+                aria-controls="navbarNav" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <span id="toogle" class="navbar-toggler-icon"></span>
+              </button>
+              
+              
+              <!-- DARK MODE -->
+              <div>
+                <input type="checkbox" class="checkbox" id="chk"/>
+
+                <label class="label" for="chk">
+                  <i id="moon" class="fas fa-moon"></i>
+                  <i id="font" class="fas fa-sun"></i>
+                  <div class="ball"></div>
+                </label>
+                
+              </div>
+              <!-- fim do dark mode-->
             </div>
-            <!-- fim do dark mode-->
+            
           </div>
           
-        </div>
-        
 
-        <!-- parte colapsável -->
-        <div 
-          class="collapse navbar-collapse" 
-          id="navbarNav">
-          <ul class="navbar-nav">
+          <!-- parte colapsável -->
+          <div 
+            class="collapse navbar-collapse" 
+            id="navbarNav">
+            <ul class="navbar-nav">
 
-            <!-- primeiro item -->
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="collapse" data-target="#inicio" aria-expanded="true" aria-controls="collapseOne">
-                Página Inicial
-              </a>
-            </li>
-            
-            <!-- CPaaS -->
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="collapse" data-target="#home" aria-expanded="true" aria-controls="collapseOne">
-                Serviços Cpaas
-              </a>
-            </li>
-
-            <div class="collapse collapse-menu" id="home">
-
+              <!-- primeiro item -->
               <li class="nav-item">
-                <a class="nav-link" data-toggle="collapse" data-target="#twofa" aria-expanded="true" aria-controls="collapseOne">
-                  2FA
+                <a class="nav-link" data-toggle="collapse" data-target="#inicio" aria-expanded="true" aria-controls="collapseOne">
+                  Página Inicial
+                </a>
+              </li>
+              
+              <!-- CPaaS -->
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="collapse" data-target="#home" aria-expanded="true" aria-controls="collapseOne">
+                  Serviços Cpaas
                 </a>
               </li>
 
-              <div class="collapse collapse-menu" id="twofa">
+              <div class="collapse collapse-menu" id="home">
+
                 <li class="nav-item">
-                  <a class="nav-link">Como funciona</a>
+                  <a class="nav-link" data-toggle="collapse" data-target="#twofa" aria-expanded="true" aria-controls="collapseOne">
+                    2FA
+                  </a>
                 </li>
+
+                <div class="collapse collapse-menu" id="twofa">
+                  <li class="nav-item">
+                    <a class="nav-link">Como funciona</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Benefícios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Quem usa?</a>
+                  </li>
+                </div>
+
+                <!-- segundo -->
                 <li class="nav-item">
-                  <a class="nav-link">Benefícios</a>
+                  <a class="nav-link" data-toggle="collapse" data-target="#mascara">Número máscara</a>
                 </li>
+
+                <div class="collapse collapse-menu" id="mascara">
+                  <li class="nav-item">
+                    <a class="nav-link">Quem usa?</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Recursos avançados</a>
+                  </li>
+                </div>
+
+                <!-- terceiro -->
                 <li class="nav-item">
-                  <a class="nav-link">Quem usa?</a>
+                  <a class="nav-link" data-toggle="collapse" data-target="#google">Google verified</a>
                 </li>
+
+                <div class="collapse collapse-menu" id="google">
+                  <li class="nav-item">
+                    <a class="nav-link">Compatibilidade</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Benefícios </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Como funciona</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Usos</a>
+                  </li>
+                </div>
+
+                <li class="nav-item">
+                  <a class="nav-link" data-toggle="collapse" data-target="#programavel">SMS programável</a>
+                </li>
+
+                <div class="collapse collapse-menu" id="programavel">
+                  <li class="nav-item">
+                    <a class="nav-link">Onde pode ser utilizado</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Jornada do cliente </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link">Benefícios</a>
+                  </li>
+                  
+              
+                </div>
+                
+                  
               </div>
-
-              <!-- segundo -->
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="collapse" data-target="#mascara">Número máscara</a>
-              </li>
-
-              <div class="collapse collapse-menu" id="mascara">
                 <li class="nav-item">
-                  <a class="nav-link">Quem usa?</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link">Recursos avançados</a>
-                </li>
-              </div>
-
-              <!-- terceiro -->
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="collapse" data-target="#google">Google verified</a>
-              </li>
-
-              <div class="collapse collapse-menu" id="google">
-                <li class="nav-item">
-                  <a class="nav-link">Compatibilidade</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link">Benefícios </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link">Como funciona</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link">Usos</a>
-                </li>
-              </div>
-
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="collapse" data-target="#programavel">SMS programável</a>
-              </li>
-
-              <div class="collapse collapse-menu" id="programavel">
-                <li class="nav-item">
-                  <a class="nav-link">Onde pode ser utilizado</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link">Jornada do cliente </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link">Benefícios</a>
+                  <a class="nav-link" data-toggle="collapse" data-target="#Cliente">Aréa do Cliente</a>
                 </li>
                 
-            
-              </div>
-              
                 
-            </div>
-              <li class="nav-item">
-                <a class="nav-link" data-toggle="collapse" data-target="#Cliente">Aréa do Cliente</a>
-              </li>
-              
-              
-          </ul>
-        </div>
-    </nav>
+            </ul>
+          </div>
+      </nav>
 
-    <hr class="hr-custom">
+      <hr class="hr-custom">
 
 
-    <!--MAIN CONTAINER-->
-    <div class="main-container">
-        <div class="col-md-6">
+      <!--MAIN CONTAINER-->
+      <div class="main-container">
+          <div class="col-md-6">
 
-            <!--INÍCIO PANEL-->
-            <div class="auth-panel">
-                <h3>
-                    <strong>SEJA NOSSO CLIENTE</strong>
-                </h3>
-                <p><strong>CADASTRA-SE</strong>
-                </p>
-            </div>
-            <!--FIM PANEL-->
+              <!--INÍCIO PANEL-->
+              <div class="auth-panel">
+                  <h3>
+                      <strong>SEJA NOSSO CLIENTE</strong>
+                  </h3>
+                  <p><strong>CADASTRA-SE</strong>
+                  </p>
+              </div>
+              <!--FIM PANEL-->
 
-            <!--FORMULÁRIO-->
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="nome"><strong>NOME COMPLETO</strong></label>
-                    <input name="text" type="text" name="nome" id="nome" placeholder="Digite seu nome" class="input"
-                        required>
-                    <span class="span-required"></span>
-                </div>
-            </div>
+              <!--FORMULÁRIO-->
+              <div class="form-row">
+                  <div class="input-group">
+                      <label for="nome"><strong>NOME COMPLETO</strong></label>
+                      <input name="text" type="text" name="nome" id="nome" placeholder="Digite seu nome" class="input"
+                          required>
+                      <span class="span-required"></span>
+                  </div>
+              </div>
 
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="nome"><strong>NOME MATERNO</strong></label>
-                    <input name="text" type="text" name="nome" id="nome" placeholder="Digite o nome de sua mãe"
-                        class="input" required>
-                </div>
-            </div>
+              <div class="form-row">
+                  <div class="input-group">
+                      <label for="nome"><strong>NOME MATERNO</strong></label>
+                      <input name="text" type="text" name="nome" id="nome" placeholder="Digite o nome de sua mãe"
+                          class="input" required>
+                  </div>
+              </div>
 
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="email"><strong>EMAIL</strong></label>
-                    <input type="email" name="email" id="email" placeholder="Digite aqui seu email" class="input"
-                        required>
-                </div>
-            </div>
+              <div class="form-row">
+                  <div class="input-group">
+                      <label for="email"><strong>EMAIL</strong></label>
+                      <input type="email" name="email" id="email" placeholder="Digite aqui seu email" class="input"
+                          required>
+                  </div>
+              </div>
 
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="cpf"><strong>CPF</strong></label>
-                    <input 
-                        type="text" 
-                        name="cpf" 
-                        id="cpf" 
-                        placeholder="Digite aqui seu Cpf" 
-                        class="input" 
-                        required
-                        maxlength="11"
-                        oninput="validarCPF()"
-                    >
-                </div>
-                <div 
-                    id="mensagemErro"
-                    class="alert alert-danger" 
-                    style="display: none; margin-top: 5px; margin-bottom: 10px">
-                    Digite um cpf válido!
-                </div>
-            </div>
+              <div class="form-row">
+                  <div class="input-group">
+                      <label for="cpf"><strong>CPF</strong></label>
+                      <input 
+                          type="text" 
+                          name="cpf" 
+                          id="cpf" 
+                          placeholder="Digite aqui seu Cpf" 
+                          class="input" 
+                          required
+                          maxlength="11"
+                          oninput="validarCPF()"
+                      >
+                  </div>
+                  <div 
+                      id="mensagemErro"
+                      class="alert alert-danger" 
+                      style="display: none; margin-top: 5px; margin-bottom: 10px">
+                      Digite um cpf válido!
+                  </div>
+              </div>
 
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="adress"><strong>ENDEREÇO COMPLETO</strong></label>
-                    <input type="text" name="adress" id="adress" placeholder="Digite aqui seu endereço" class="input"
-                        required>
-                </div>
-            </div>
+              <div class="form-row">
+                  <div class="input-group">
+                      <label for="adress"><strong>ENDEREÇO COMPLETO</strong></label>
+                      <input type="text" name="adress" id="adress" placeholder="Digite aqui seu endereço" class="input"
+                          required>
+                  </div>
+              </div>
 
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="sex"><strong>SEXO</strong></label>
-                    <select id="sex" required>
-                        <option selected disabled value="">Selecione</option>
-                        <option>Feminino</option>
-                        <option>Masculino</option>
-                        <option>Outro</option>
-                    </select>
-                </div>
-            </div>
+              <div class="form-row">
+                  <div class="input-group">
+                      <label for="sex"><strong>SEXO</strong></label>
+                      <select id="sex" required>
+                          <option selected disabled value="">Selecione</option>
+                          <option>Feminino</option>
+                          <option>Masculino</option>
+                          <option>Outro</option>
+                      </select>
+                  </div>
+              </div>
 
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="date"><strong>DATA DE NASCIMENTO</strong></label>
-                    <input type="date" name="date" id="date" placeholder="" class="input required">
-                </div>
-            </div>
+              <div class="form-row">
+                  <div class="input-group">
+                      <label for="date"><strong>DATA DE NASCIMENTO</strong></label>
+                      <input type="date" name="date" id="date" placeholder="" class="input required">
+                  </div>
+              </div>
 
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="tel"><strong>TEL FIXO</strong></label>
-                    <input type="text" name="tel" id="tel" placeholder="(+55)XX-XXXXXXXX" class="input" required>
-                </div>
-            </div>
+              <div class="form-row">
+                  <div class="input-group">
+                      <label for="tel"><strong>TEL FIXO</strong></label>
+                      <input type="text" name="tel" id="tel" placeholder="(+55)XX-XXXXXXXX" class="input" required>
+                  </div>
+              </div>
 
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="tel"><strong>CELULAR</strong></label>
-                    <input type="text" name="tel" id="tel" placeholder="(+55)XX-XXXXXXXX" class="input" required>
-                </div>
-            </div>
+              <div class="form-row">
+                  <div class="input-group">
+                      <label for="tel"><strong>CELULAR</strong></label>
+                      <input type="text" name="tel" id="tel" placeholder="(+55)XX-XXXXXXXX" class="input" required>
+                  </div>
+              </div>
 
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="password"><strong>SENHA</strong></label>
-                    <input name="password" type="password" id="password" placeholder="Digite sua senha" class="input"
-                        required />
-                </div>
-            </div>
-            <div class="form-row">
-                <div class="input-group">
-                    <label for="password"><strong>CONFIRMAR SENHA</strong></label>
-                    <input name="password" type="password" id="password" placeholder="Confirme a sua senha"
-                        class="input" required />
-                </div>
-                <p>Já é nosso Cliente?<a
-                        href="file:///C:/Users/mayam/OneDrive/%C3%81rea%20de%20Trabalho/Trabalho%20Faculdade/login.html#"><strong>
-                            Acesse sua conta</strong></a></p>
+              <div class="form-row">
+                  <div class="input-group">
+                      <label for="password"><strong>SENHA</strong></label>
+                      <input name="password" type="password" id="password" placeholder="Digite sua senha" class="input"
+                          required />
+                  </div>
+              </div>
+              <div class="form-row">
+                  <div class="input-group">
+                      <label for="password"><strong>CONFIRMAR SENHA</strong></label>
+                      <input name="password" type="password" id="password" placeholder="Confirme a sua senha"
+                          class="input" required />
+                  </div>
+                  <p>Já é nosso Cliente?<a
+                          href="file:///C:/Users/mayam/OneDrive/%C3%81rea%20de%20Trabalho/Trabalho%20Faculdade/login.html#"><strong>
+                              Acesse sua conta</strong></a></p>
 
 
-            </div>
+              </div>
 
-            <div class="col-md-4">
-                <button class="btn btn primary" type="submit">Entrar</button>
-            </div>
+              <div class="col-md-4">
+                  <button class="btn btn primary" type="submit">Entrar</button>
+              </div>
 
-        </div>
+          </div>
 
+      </div>
     </div>
     <!--JS-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
